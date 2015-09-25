@@ -89,37 +89,40 @@ int main()
 
 
     //Exercice 1.8
-//    int dividend = 32;
-//    int quotient;
-//    int reste;
-//    for (int divisor = 0; divisor < dividend; divisor++ )
-//    {
-//        quotient = euclidianDivision(dividend, divisor).first;
-//        reste    = euclidianDivision(dividend, divisor).second;
-//        cout << dividend << " = " << setw(2) << quotient << setw(
-//                 2) << " * " << setw(2) << divisor << " + " << setw(
-//                 2) << reste << endl;
-//    }
+//     int dividend = 32;
+//     int quotient;
+//     int reste;
+//     for (int divisor = 0; divisor < dividend; divisor++ )
+//     {
+//         quotient = euclidianDivision(dividend, divisor).first;
+//         reste    = euclidianDivision(dividend, divisor).second;
+//         cout << dividend << " = " << setw(2) << quotient << setw(
+//                  2) << " * " << setw(2) << divisor << " + " << setw(
+//                  2) << reste << endl;
+//     }
 
 
     // Exercice 1.10
-    //    unsigned a = 423;
-    //    unsigned b = 135;
+//    unsigned a = 423;
+//    unsigned b = 135;
 
-    //    for(int cpt1 = 0; cpt1<=5; cpt1++, a +=3)
-    //    {
-    //        for(int cpt2 = 0; cpt2<=2; cpt2++, b -=5)
-    //        {
-    //            if(cpt2!=2)
-    //            {
-    //                cout << "gcd("<< a <<","<<b<<")" <<" = "<<setw(2) <<gcd(a,b)<<setw(3)<<" | "<< setw(3);
-    //            } else
-    //            {
-    //                cout << "gcd("<< a <<","<<b<<")" <<" = "<<setw(2) <<gcd(a,b)<< setw(3);
-    //            }
+//    for (int cpt1 = 0; cpt1 <= 5; cpt1++, a += 3)
+//    {
+//        for (int cpt2 = 0; cpt2 <= 2; cpt2++, b -= 5)
+//        {
+//            if (cpt2 != 2)
+//            {
+//                cout << "gcd(" << a << "," << b << ")" << " = " << setw(2) << gcd(a,
+//                        b) << setw(3) << " | " << setw(3);
+//            }
+//            else
+//            {
+//                cout << "gcd(" << a << "," << b << ")" << " = " << setw(2) << gcd(a,
+//                        b) << setw(3);
+//            }
 
-    //        }
-    //        b = 135;
-    //        cout << endl;
-    //    }
-   }
+//        }
+//        b = 135;
+//        cout << endl;
+//    }
+}
