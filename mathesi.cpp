@@ -10,17 +10,14 @@ bool isPrime(unsigned number)
         {
             prime = false;
         } else {
-            if(number !=2)
+            unsigned nb = 3;
+            while (nb<=sqrt(number) && prime)
             {
-                unsigned nb = 3;
-                while (nb<=sqrt(number) && prime)
+                if(number % nb == 0)
                 {
-                    if(number % nb == 0)
-                    {
-                        prime = false;
-                    }
-                    nb+=2;
+                    prime = false;
                 }
+                nb+=2;
             }
         }
         return prime;
@@ -59,22 +56,28 @@ std::pair<int,int> euclidianDivision(int dividend, int divisor)
 
 unsigned gcd(unsigned a, unsigned b)
     {
-        unsigned temp;
-        if(b>a)
-        {
-            temp = a;
-            a    = b;
-            b    = temp;
-        }
-        if (b == 0)
-        {
-            return a;
-        }
-        while((a%b !=0) && (b!=1))
-        {
-            temp = a;
-            a = b;
-            b = temp%b;
-        }
-        return b;
+//        unsigned temp;
+//        if(b>a)
+//        {
+//            temp = a;
+//            a    = b;
+//            b    = temp;
+//        }
+//        if (b == 0)
+//        {
+//            return a;
+//        }
+//        while((a%b !=0) && (b!=1))
+//        {
+//            temp = a;
+//            a = b;
+//            b = temp%b;
+//        }
+//        return b;
+
+    if(b==0) {
+        return a;
+    }
+    a = a%b;
+    gcd(b,a);
     }
